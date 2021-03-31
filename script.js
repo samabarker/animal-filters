@@ -15,8 +15,8 @@ buttons.forEach(item => {
     })
 })
 
-// Filter using search box
-document.getElementById("filter").addEventListener("input", () => {
+//Search function
+const search = () => {
     let searchTerm = document.getElementById("filter").value;
     if (!searchTerm) {
         for (let image of images) {
@@ -30,4 +30,10 @@ document.getElementById("filter").addEventListener("input", () => {
             }
         }
     }
-})
+}
+
+// Filter using search box
+document.getElementById("filter").addEventListener("input", search);
+
+//call search on load to activate search box immediately
+search();
