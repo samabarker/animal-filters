@@ -2,37 +2,37 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <title>DOM Practical</title>
+        <title>Animals!</title>
     </head>
     <body>
-        <h1 id = "my-h1">Hello World - This will change</h1>
-        <p id="my-text">This will turn blue</p>
-        <p class="my-p">This will turn green</p>
-        <div id="main-content">Some new text will show below</div>
-        <br>
-        <button type="button" id="myBtn">Click Me - I Will Disappear</button>
-        <p><span id="hover-p">Hover over me</span></p>
-        <a href="google.com" id="my-link">Google - clicking this link will not do anything</a>
-        <p><button type="button" id="click-it">Hello</button></p>
+        <h1>Animal Filters</h1>
+        <div class="filter">
+            <input type="text" id="filter" name="filter" class="text-search"><br><br>
+            <button class="buttonFilter" animal="dog">Dog</button>
+            <button class="buttonFilter" animal="cat">Cat</button>
+            <button class="buttonFilter" animal="snake">Snake</button>
+            <button class="buttonFilter" animal="monkey">Monkey</button>
+            <button class="buttonFilter" animal="all">Show All</button>
+        </div>
         <br><br>
-        <form id="myForm">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
-
-            <input type="radio" id="male" name="gender" value="male" checked>
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br><br>
-
-            <button type="button" id="submitBtn">Submit</button>
-        </form>
-
+        <div class="images">
+            <img alt="smiling" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="dog imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/731022/pexels-photo-731022.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="dog imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/57627/pexels-photo-57627.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="dog imageFilter">
+            <img alt="smiling" src="https://images.pexels.com/photos/3714060/pexels-photo-3714060.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="dog imageFilter">
+            <img alt="playing" src="https://images.pexels.com/photos/2064110/pexels-photo-2064110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="cat imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/755834/pexels-photo-755834.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="cat imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/2817421/pexels-photo-2817421.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="cat imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="cat imageFilter">
+            <img alt="playing" src="https://images.pexels.com/photos/80474/grass-snake-snake-serpentes-natrix-80474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="snake imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/45246/green-tree-python-python-tree-python-green-45246.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="snake imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/2694056/pexels-photo-2694056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="snake imageFilter">
+            <img alt="playing" src="https://images.pexels.com/photos/23817/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="snake imageFilter">
+            <img alt="sitting" src="https://images.pexels.com/photos/3342627/pexels-photo-3342627.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="monkey imageFilter">
+            <img alt="sleeping" src="https://images.pexels.com/photos/1636016/pexels-photo-1636016.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="monkey imageFilter">
+            <img alt="jumping" src="https://images.pexels.com/photos/1260803/pexels-photo-1260803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="monkey imageFilter">
+            <img alt="sitting" src="https://images.pexels.com/photos/33535/primate-ape-thinking-mimic.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="monkey imageFilter">
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
